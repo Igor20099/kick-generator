@@ -2,16 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick Generator</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>KICK GENERATOR</title>
 </head>
 <body>
-    <div class="kick-generator">
-        <h1 class="title">KICK GENERATOR v 0.1</h1>
-        <button class="generate_btn">Generate Kick</button>
+    <h1 class="title">Kick Generator</h1>
+
+    <div class="container">
+        <div class="control-panel" id="frequency-panel">
+            <h3>Frequency Settings</h3>
+            <!-- Слайдеры будут добавлены через JS -->
+        </div>
+    
+        <div class="control-panel" id="amplitude-panel">
+            <h3>Amplitude Settings</h3>
+            <!-- Слайдеры будут добавлены через JS -->
+        </div>
+        <div class="control-panel" id="duration-panel">
+            <h3>Duration Settings</h3>
+            <!-- Слайдеры будут добавлены через JS -->
+        </div>
     </div>
+
+    
+
+    <div class="container">
+        <div class="control-panel" id="adsr-panel">
+            <h3>ADSR Envelope</h3>
+            <!-- Слайдеры будут добавлены через JS -->
+        </div>
+    
+        <div class="control-panel" id="click-panel">
+            <h3>High-Frequency Click</h3>
+            <!-- Слайдеры будут добавлены через JS -->
+        </div>
+    </div>
+
+    <button id="generate-btn">Generate Kick</button>
+
+    <div id="clipping-warning" class="warning" style="display: none;">
+        ⚠️ Внимание: обнаружен клиппинг! Уменьшите Volume или Saturation.
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

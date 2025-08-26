@@ -4,18 +4,124 @@
 }
 body {
     background-color: #111;
-    color:'#ccc';
-    font-family: monospace;
+    color: #ccc;
+    font-family: 'Courier New', monospace;
     text-align: center;
-
+    padding: 20px;
+    margin: 0;
 }
-.kick-generator {
-    width: 80%;
-    margin: 0 auto;
+
+.control-panel {
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #444;
+    padding: 15px;
+    margin-right: 14px;
+    max-width: 600px;
 }
 
 .title {
-    margin-top: 20px;
-    color: white;
-    text-align: center;
+    margin-bottom: 14px;
+    color:#fff;
+}
+
+h3 {
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.slider-container {
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    color: #ccc;
+    display: inline-block;
+    width: 140px;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.value-display {
+    color: #0f0;
+    font-family: monospace;
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: #0f0;
+    border: 1px solid #0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    margin: 5px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #0f0;
+    color: #000;
+}
+
+#generate-btn {
+    background: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+#oscilloscope {
+    display: block;
+    background: #000;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.warning {
+    color: #f00;
+    background-color: #300;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #f00;
+}
+
+.info-box {
+    background-color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #0f0;
+}
+
+.preset-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.preset-btn {
+    padding: 5px 10px;
+    font-size: 11px;
 }
