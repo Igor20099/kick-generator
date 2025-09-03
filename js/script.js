@@ -304,7 +304,7 @@ function drawStaticOscilloscope(
 
   // Рисуем волну
   function drawWaveform() {
-    ctx.strokeStyle = mode === "eight08" ? "#ff0" : "#0f0";
+    ctx.strokeStyle = "#0f0";
     ctx.lineWidth = 2;
     ctx.beginPath();
 
@@ -384,6 +384,15 @@ function createAudioControls(audioBuffer) {
   playBtn.style.background = "#333";
   playBtn.style.color = "#fff";
   playBtn.style.border = `1px solid #fff`;
+  playBtn.addEventListener("mouseover", () => {
+    playBtn.style.color = "#0f0";
+    playBtn.style.borderColor = "#0f0";
+  });
+
+  playBtn.addEventListener("mouseout", () => {
+    playBtn.style.color = "#fff";
+    playBtn.style.borderColor = "#fff";
+  });
   playBtn.addEventListener("click", () => {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     const source = audioCtx.createBufferSource();
@@ -398,6 +407,14 @@ function createAudioControls(audioBuffer) {
   downloadBtn.style.background = "#333";
   downloadBtn.style.color = "#fff";
   downloadBtn.style.border = `1px solid #fff`;
+  downloadBtn.addEventListener("mouseover", () => {
+    downloadBtn.style.color = "#0f0";
+    downloadBtn.style.borderColor = "#0f0";
+  });
+  downloadBtn.addEventListener("mouseout", () => {
+    downloadBtn.style.color = "#fff";
+    downloadBtn.style.borderColor = "#fff";
+  });
   downloadBtn.addEventListener("click", () => {
     const wavBlob = bufferToWave(audioBuffer);
     const url = URL.createObjectURL(wavBlob);
