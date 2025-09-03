@@ -33,4 +33,4 @@
 - **Click Frequancy** - частота щелчка
 - **Click Duration** - длительность щелчка. Рекомендуется ставить маленькую длительность
 
-Протестировать генератор бочки можно по ссылке [kick-generator.netlify.app](kick-generator.netlify.app)
+Протестировать генератор бочки можно по ссылке [kick-generator.netlify.app](https://kick-generator.netlify.app/)
