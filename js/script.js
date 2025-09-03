@@ -16,7 +16,7 @@ let frequencyParams = {
 };
 
 let amplitudeParams = {
-  volume: 1, // Уменьшено для предотвращения клиппинга
+  volume: 1,
   saturation: 0.0,
 };
 
@@ -516,7 +516,7 @@ function initializeControls() {
         name: "saturation",
         label: "Saturation",
         min: 0.0,
-        max: 0.8,
+        max: 1,
         step: 0.1,
         value: 0.0,
         precision: 1,
