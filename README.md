@@ -32,3 +32,5 @@
 - **Click Amount** - громкость щелчка
 - **Click Frequancy** - частота щелчка
 - **Click Duration** - длительность щелчка. Рекомендуется ставить маленькую длительность
+
+[kick-generator.netlify.app](kick-generator.netlify.app)
