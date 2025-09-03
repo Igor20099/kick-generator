@@ -1,4 +1,4 @@
-# KICK GENERATOR v 0.1
+# KICK GENERATOR
 
 ![kick generator](kick_generator.png)
 
