@@ -8,7 +8,7 @@
 
 ### Frequancy Settings
 
-- **Frequancy** - начальная частота бочки.
+- **Frequancy** - начальная частота бочки
 - **Pitch Decay** - чем ниже значение, тем больше бочка падает к низкой частоте
 
 ### Amplitude Settings
